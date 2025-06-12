@@ -10,5 +10,7 @@ public class SumOfSquares {
                 .reduce(0,Integer::sum);
         System.out.println(sqResults);
 
+        int sum1 = list.stream().mapToInt(x->x*x).sum();
+        System.out.println(sum1);
     }
 }
